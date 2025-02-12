@@ -8,13 +8,14 @@ This is a simple REST API that processes receipts and calculates reward points b
 
 
 # Run the serever
-Install dependencies: go mod tidy
-Run the server: go run main.go
+Install dependencies: `go mod tidy`
+
+Run the server: `go run main.go`
 
 
 # Hitting the endpoints
 
-curl -X POST http://localhost:8080/receipts/process -d '{
+`curl -X POST http://localhost:8080/receipts/process -d '{
   "retailer": "Target",
   "purchaseDate": "2022-01-01",
   "purchaseTime": "13:01",
@@ -37,8 +38,8 @@ curl -X POST http://localhost:8080/receipts/process -d '{
     }
   ],
   "total": "35.35"
-}' -H "Content-Type: application/json"
+}' -H "Content-Type: application/json"`
 
 
 
-curl -X GET "http://localhost:8080/receipts/7fb1377b-b223-49d9-a31a-5a02701dd310/points"
+`curl -X GET "http://localhost:8080/receipts/7fb1377b-b223-49d9-a31a-5a02701dd310/points"`
