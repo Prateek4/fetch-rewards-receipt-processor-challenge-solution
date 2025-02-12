@@ -8,7 +8,8 @@ This is a simple REST API that processes receipts and calculates reward points b
 
 
 # Run the serever
-go run main.go
+Install dependencies: go mod tidy
+Run the server: go run main.go
 
 
 # Hitting the endpoints
